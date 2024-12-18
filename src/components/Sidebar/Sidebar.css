@@ -1,0 +1,86 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #29889B;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.list-group-item {
+  background-color: #29889B;
+  border: none;
+  padding: 15px 20px;
+}
+
+.list-group-item:hover {
+  background-color: #18535f;
+}
+
+.text-decoration-none {
+  color: white;
+}
+
+.text-decoration-none:hover {
+  color: #adb5bd;
+}
+
+.me-2 {
+  margin-right: 10px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #29889B;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.toggle-button:hover {
+  background-color: #18535f;
+}
+
+.list-group-item {
+  background-color: #29889B !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 15px 20px;
+}
+
+.list-group-item:hover {
+  background-color: #18535f !important;
+}
+
+@media (max-width: 820px) {
+  .sidebar.open {
+    width: 100vw;
+  }
+  
+  .app-container.sidebar-open .content {
+    display: none;
+  }
+}

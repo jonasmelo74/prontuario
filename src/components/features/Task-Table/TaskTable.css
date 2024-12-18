@@ -1,0 +1,47 @@
+.high-priority {
+  font-weight: bold;
+}
+
+th {
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #29889B;
+}
+
+.btn-link{
+  text-decoration: none;
+  color: black;
+}
+
+.toggle-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 10px;
+  transition: transform 0.3s;
+  transform: rotate(-90deg);
+}
+
+.rotate {
+  transform: rotate(0deg);
+}
+
+.table-wrapper {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+}
+
+.table-wrapper.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+.table-wrapper.visible {
+  max-height: 1000px;
+  opacity: 1;
+}
