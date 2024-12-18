@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Home from './components/Home/home';
+import Home from './components/Home/Home';
 import Pacient from './components/Pacient/Pacient';
 import Agendamentos from './components/Agendamentos/Agendamentos';
 
